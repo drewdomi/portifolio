@@ -1,0 +1,24 @@
+{
+  "name": "drew-domi",
+  "version": "1.0.0",
+  "description": "Drew's Portifolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewdomi/portifolio.git"
+  },
+  "keywords": [
+    "portifolio",
+    "front-end",
+    "freelancing"
+  ],
+  "author": "drewdomi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/drewdomi/portifolio/issues"
+  },
+  "homepage": "https://github.com/drewdomi/portifolio#readme"
+}
