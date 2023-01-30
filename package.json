@@ -4,7 +4,8 @@
   "description": "Drew's Portifolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "lite-server",
+    "sass": "sass -wc --no-source-map --style=compressed src/scss/:src/css/"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/drewdomi/portifolio/issues"
   },
-  "homepage": "https://github.com/drewdomi/portifolio#readme"
+  "homepage": "https://github.com/drewdomi/portifolio#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@500&family=Roboto&display=swap');
+
+$bg-body: #323232;
+$font-primary: 'Roboto', sans-serif;
+$black: #080808;
+$white: #e4e4e4;
+$primary-color: #80A0FF;
+
+@mixin menu-blur {
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(5rem);
+}

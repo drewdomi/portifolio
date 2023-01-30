@@ -1,0 +1,41 @@
+@import 'reset';
+
+.hide{
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  @include menu-blur;
+}
+.ham-menu {
+  border-radius: 0.5rem;
+  background-color: $primary-color;
+  padding: 0.9rem 0.9rem 0.6rem;
+}
+.display-none {
+  display: none;
+}
+.link-container {
+  background: $black;
+  position: absolute;
+  right: 1rem;
+  margin-top: .5rem;
+  border-radius: .5rem;
+  .link-item {
+    list-style: none;
+    padding: .5rem;
+    padding-right: 5rem;
+    font-size: 2rem;
+    a {
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}
