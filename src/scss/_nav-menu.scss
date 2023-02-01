@@ -6,13 +6,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem 4rem;
   position: sticky;
   top: 0;
   @include menu-blur;
 }
 .ham-menu {
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   background-color: $primary-color;
   padding: 0.9rem 0.9rem 0.6rem;
 }
