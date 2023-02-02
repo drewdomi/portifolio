@@ -1,13 +1,10 @@
 $bg-body: #323232;
 $font-primary: 'Roboto', sans-serif;
+$display-font: 'Poppins', sans-serif;
 $black: #080808;
 $white: #e4e4e4;
 $primary-color: #80A0FF;
 
-@mixin menu-blur {
-  background-color: rgba(8, 8, 8, 0);
-  backdrop-filter: blur(5rem);
-}
 @mixin default-box-shadow{
   box-shadow: 1px 1px 1px rgba(8, 8, 8, 0.5);
 }
