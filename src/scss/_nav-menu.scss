@@ -35,3 +35,19 @@ header {
     }
   }
 }
+@media (min-width: 800px) {
+  .hide{
+    display: initial;
+  }
+  .ham-menu{
+    display: none;
+  }
+  .link-container{
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    margin-top: 0;
+    border-radius: none;
+  }
+}
