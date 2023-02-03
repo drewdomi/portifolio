@@ -2,39 +2,20 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@500&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="src/css/main.css"
-    />
-    <script
-      defer
-      src="src/js/init.js"
-    ></script>
+    <link rel="stylesheet" href="src/css/main.css" />
+    <script defer src="src/js/init.js"></script>
     <title>Drew Domi</title>
   </head>
   <body>
     <header>
-      <img
-        src="src/img/logo.svg"
-        alt="Logo Drew Domi"
-      />
+      <img src="src/img/logo.svg" alt="Logo Drew Domi" />
       <nav>
         <div class="ham-menu">
           <img
@@ -57,26 +38,22 @@
     </header>
     <main>
       <section id="intro-section">
-        <div class="text-container text-blinking">
+        <div id="text-container" class="text-blinking">
           <span>welcome</span>
           <span>!!!</span>
         </div>
         <div id="intro">
           <div id="paragh">
             <h2 id="sub-title">Oi, eu sou</h2>
-            <h1
-              id="title"
-              title="Drew Domi"
-            >
-              Andrew Domingues
-            </h1>
+            <h1 id="title" title="Drew Domi">Andrew Domingues</h1>
             <h2 id="sub-title">Desenvolvedor Front-end</h2>
           </div>
 
-          <div id="buttons">
+          <div id="button-container">
             <a
               href="https://github.com/drewdomi/"
               target="_blank"
+              class="buttons"
             >
               <button class="btn">
                 <img
@@ -89,6 +66,7 @@
             <a
               href="https://linkedin.com/in/drewdomi"
               target="_blank"
+              class="buttons"
             >
               <button class="btn">
                 <img
@@ -103,45 +81,55 @@
         <img
           id="drew-photo"
           src="src/img/profile.jpg"
-          alt="Foto de Andrew Domingues"
+          alt="Foto do Andrew Domingues"
         />
       </section>
       <section id="about-section">
         <h3>Sobre</h3>
         <p id="about-text">
-          Comecei meus estudos apenas como um hobby, mas conforme fui pegando gosto pela coisa não consegui mais parar.
-          <br>
+          Comecei meus estudos apenas como um hobby, mas conforme fui pegando
+          gosto pela coisa não consegui mais parar.
+          <br />
           Agora desenvolvo sites e páginas que você vai amar!
         </p>
-          <img
-            src="/src/img/typing.gif"
-            alt="Gif digitando"
-            id="typing"
-          />
+        <img src="/src/img/typing.gif" alt="Gif digitando" id="typing" />
       </section>
       <section id="projects-section">
         <h3>Projetos</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
-          odit inventore, ad numquam, veniam eum fuga pariatur, non quidem sequi
-          itaque neque nostrum praesentium libero distinctio dolore nesciunt
-          ratione similique. Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Perferendis odit inventore, ad numquam, veniam eum fuga
-          pariatur, non quidem sequi itaque neque nostrum praesentium libero
-          distinctio dolore nesciunt ratione similique.
-        </p>
+        <div id="proj-container">
+          <div class="proj-card" id="proj-1"></div>
+          <div class="proj-card" id="proj-2"></div>
+          <div class="proj-card" id="proj-3"></div>
+          <div class="proj-card" id="proj-4"></div>
+        </div>
       </section>
       <section id="contact-section">
         <h3>Contato</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
-          odit inventore, ad numquam, veniam eum fuga pariatur, non quidem sequi
-          itaque neque nostrum praesentium libero distinctio dolore nesciunt
-          ratione similique. Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Perferendis odit inventore, ad numquam, veniam eum fuga
-          pariatur, non quidem sequi itaque neque nostrum praesentium libero
-          distinctio dolore nesciunt ratione similique.
-        </p>
+        <div id="contact-container">
+          <a href="https://github.com/drewdomi/" target="_blank">
+            <div class="contact-card" id="contact-github">
+              <img src="src/img/icons/github-white.svg" alt="Github" />
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/drewdomi" target="_blank">
+            <div class="contact-card" id="contact-linkedin">
+              <img src="src/img/icons/linkedin-white.svg" alt="LinkedIn" />
+            </div>
+          </a>
+          <a href="https://www.instagram.com/drew_domi/" target="_blank">
+            <div class="contact-card" id="contact-instagram">
+              <img src="src/img/icons/instagram-white.svg" alt="Instagram" />
+            </div>
+          </a>
+          <a
+            href="http://discordapp.com/users/544323689328541727"
+            target="_blank"
+          >
+            <div class="contact-card" id="contact-discord">
+              <img src="src/img/icons/discord-white.svg" alt="Discord" />
+            </div>
+          </a>
+        </div>
       </section>
     </main>
   </body>

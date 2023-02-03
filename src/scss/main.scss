@@ -1,29 +1,5 @@
 @import 'nav-menu';
 
-@keyframes neon-blinking {
-  0%,
-  18%,
-  20%,
-  50.1%,
-  60.1%,
-  80%,
-  90.1%,
-  92% {
-    color: #282a2e;
-    text-shadow: none;
-  }
-  18.1%,
-  20.1%,
-  30%,
-  50%,
-  60.1%,
-  65%,
-  80.1%,
-  100% {
-    color: #fff;
-    text-shadow: 0px -2px 15px #fff;
-  }
-}
 :root {
   font-size: 62.5%;
 }
@@ -41,21 +17,6 @@ body {
   max-width: 80rem;
   margin: 0 auto;
 }
-.text-container {
-  color: #282a2e;
-  font: 38px 'Concert One', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: default;
-}
-.text-blinking span {
-  color: #fff;
-  animation: neon-blinking 5s linear infinite backwards;
-  text-shadow: 0px 0px 15px #fff;
-}
-.text-blinking span:nth-child(even) {
-  animation-delay: 0.5s;
-}
 
 main {
   display: grid;
@@ -70,44 +31,60 @@ section {
   gap: calc(6.4rem - 1.2rem);
   justify-items: center;
   max-width: 48rem;
-  margin: 0 4rem;
+  margin: 0 2rem;
+  width: 30rem;
   h3 {
     font: 500 3.2rem $display-font;
     justify-self: left;
-    margin-top: 1.2rem
+    margin-top: 1.2rem;
   }
-  img#typing {
-    @include default-box-shadow;
-    width: 28rem;
-    border-radius: 0.4rem;
+}
+
+#intro-section {
+  margin: 4rem 0 0 0;
+
+  #text-container {
+    color: #282a2e;
+    font: 38px 'Concert One', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: default;
   }
-  p#about-text {
-    font-size: 2.4rem;
+  .text-blinking span {
+    color: #fff;
+    animation: neon-blinking 5s linear infinite backwards;
+    text-shadow: 0px 0px 15px #fff;
+  }
+  .text-blinking span:nth-child(even) {
+    animation-delay: 0.5s;
   }
 
   #paragh {
     width: 29.5rem;
+    #sub-title {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+    #title {
+      font-size: 2.4rem;
+      margin-bottom: 1.6rem;
+      letter-spacing: 0.2rem;
+      font-family: 'Poppins';
+    }
+    #sub-title:last-child {
+      font-size: 2rem;
+      margin-bottom: 2.4rem;
+    }
   }
-  #sub-title {
-    font-size: 1.8rem;
-    margin-bottom: 0.8rem;
-  }
-  #title {
-    font-size: 2.8rem;
-    margin-bottom: 1.6rem;
-    letter-spacing: 0.2rem;
-  }
-  #sub-title:last-child {
-    font-size: 2.4rem;
-    margin-bottom: 2.4rem;
-  }
-  #buttons {
+
+  #button-container {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
   }
-  a {
+
+  .buttons {
     text-decoration: none;
     .btn {
       cursor: pointer;
@@ -129,6 +106,53 @@ section {
     @include default-box-shadow;
   }
 }
-#intro-section{
-  margin: 4rem 0 0 0;
+#about-section {
+  img#typing {
+    @include default-box-shadow;
+    width: 28rem;
+    border-radius: 0.4rem;
+  }
+  p#about-text {
+    font-size: 2.4rem;
+  }
+}
+#projects-section {
+  #proj-container {
+    display: grid;
+    gap: 4rem;
+    grid-template-areas:
+      'card1'
+      'card2'
+      'card3'
+      'card4';
+  }
+  .proj-card {
+    width: 30rem;
+    height: 30rem;
+    background-color: $bg-card;
+    border-radius: 0.4rem;
+    @include default-box-shadow;
+    cursor: pointer;
+  }
+}
+#contact-section {
+  #contact-container {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-areas:
+      'icon1 icon2'
+      'icon3 icon4';
+    .contact-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.6rem;
+      width: 8rem;
+      height: 8rem;
+      background-color: $bg-card;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      @include default-box-shadow;
+    }
+  }
 }

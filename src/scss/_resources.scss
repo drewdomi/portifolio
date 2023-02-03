@@ -3,8 +3,33 @@ $font-primary: 'Roboto', sans-serif;
 $display-font: 'Poppins', sans-serif;
 $black: #080808;
 $white: #e4e4e4;
-$primary-color: #80A0FF;
+$primary-color: #80a0ff;
+$bg-card: #474747;
 
-@mixin default-box-shadow{
+@mixin default-box-shadow {
   box-shadow: 1px 1px 1px rgba(8, 8, 8, 0.5);
+}
+@keyframes neon-blinking {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #282a2e;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0px -2px 15px #fff;
+  }
 }
