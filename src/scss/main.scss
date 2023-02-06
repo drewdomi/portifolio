@@ -16,6 +16,7 @@ body {
   font-family: $font-primary;
   max-width: 80rem;
   margin: 0 auto;
+  transition: all .4s ease-in-out;
 }
 
 main {
@@ -95,6 +96,7 @@ section {
       gap: 0.8rem;
       border: none;
       background-color: $primary-color;
+      background: $btn-color;
       border-radius: 0.4rem;
       padding: 0.6rem 1.2rem;
     }
@@ -153,6 +155,20 @@ section {
       border-radius: 0.4rem;
       cursor: pointer;
       @include default-box-shadow;
+      transition: background-color .3s ease;
+    }
+    #contact-github:hover{
+      background-color: $black;
+    }
+    #contact-linkedin:hover{
+      background-color: $linkedin-color;
+    }
+    #contact-whatsapp:hover{
+      background-color: $whatsapp-color;
+    }
+    #contact-email:hover{
+      background-color: $email-color;
     }
   }
+  
 }

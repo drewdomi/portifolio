@@ -4,7 +4,12 @@ $display-font: 'Poppins', sans-serif;
 $black: #080808;
 $white: #e4e4e4;
 $primary-color: #80a0ff;
+$btn-color: linear-gradient(#80a0ff, #5E82EA);
 $bg-card: #474747;
+$linkedin-color: #0A66C2;
+$instagram-color: #FF0078;
+$whatsapp-color: #09BD29;
+$email-color: #6000C0;
 
 @mixin default-box-shadow {
   box-shadow: 1px 1px 1px rgba(8, 8, 8, 0.5);
