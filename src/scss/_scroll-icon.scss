@@ -1,0 +1,24 @@
+#scroll-icon,
+#scroll-icon::before{
+  position: absolute;
+  left: 50%;
+}
+
+#scroll-icon{
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 640px;
+  margin-top: -35px
+ }
+
+#scroll-icon::before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #e4e4e4;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 50%;
+  animation: scroll 1.5s 1s infinite;
+}
