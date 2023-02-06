@@ -136,6 +136,13 @@ section {
     border-radius: 0.4rem;
     @include default-box-shadow;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+      font-size: 2.4rem;
+      font-family: 'Poppins';
+    }
   }
 }
 #contact-section {
