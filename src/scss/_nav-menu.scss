@@ -1,4 +1,4 @@
-@import 'resources';
+@import "resources";
 .hide {
   display: none;
 }
@@ -17,37 +17,53 @@ header {
   display: none;
 }
 .link-container {
-  background: $black;
+  background: $bg-card;
   position: absolute;
   right: 4rem;
   margin-top: 2.4rem;
   border-radius: 0.4rem;
   .link-item {
     list-style: none;
-    padding: 0.5rem;
-    padding-right: 5rem;
-    font-size: 2.4rem;
+    padding: 0.5rem 0;
+    font-size: 2rem;
     a {
+      display: block;
+      width: 15rem;
       text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      padding-left: 1rem;
+      &:hover {
+        background-color: #222;
+      }
     }
   }
 }
 @media (min-width: 800px) {
-  .hide{
+  .hide {
     display: initial;
   }
-  .ham-menu{
+  .ham-menu {
     display: none;
   }
-  .link-container{
+  .link-container {
     position: initial;
     display: flex;
     flex-direction: row;
     background: none;
     margin-top: 0;
     border-radius: none;
+    .link-item{
+      padding: 0 3rem;
+      &:last-child{
+        padding-right: 0;
+      }
+      a{
+        display: initial;
+        padding: 0;
+        width: initial;
+        &:hover{
+          background-color: initial;
+        }
+      }
+    }
   }
 }
