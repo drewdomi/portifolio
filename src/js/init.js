@@ -1,6 +1,8 @@
 const hamMenuBtn = document.querySelector('.ham-menu')
+const navMenu = document.querySelector('.nav-menu')
+const linkItem = navMenu.querySelectorAll('* a')
+
 function toggleHideMenuClass() {
-  const navMenu = document.querySelector('.nav-menu')
   navMenu.classList.toggle('hide')
 }
 
@@ -12,4 +14,10 @@ function toggleMenu() {
   toggleHideMenuClass()
 }
 
-hamMenuBtn.addEventListener('click', toggleMenu)
+hamMenuBtn.addEventListener('pointerdown', toggleMenu)
+
+linkItem.forEach(linkItem => {
+  linkItem.addEventListener('pointerdown', () => {
+   setTimeout(toggleMenu, 500)
+  })
+})
