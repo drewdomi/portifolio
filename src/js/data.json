@@ -6,6 +6,31 @@
       "images": {
         "bg": "/src/img/projects/bg1.png",
         "bgBlur": "/src/img/projects/bg1-blur.png"
+      },
+      "about": "Uma landing page sobre uma empresa de viagem espacial, feito com HTML, SCSS, JS"
+    },
+    {
+      "id": 1,
+      "name": "Em breve",
+      "images": {
+        "bg": "/src/img/projects/bg1.png",
+        "bgBlur": "/src/img/projects/bg1-blur.png"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Em breve",
+      "images": {
+        "bg": "/src/img/projects/bg1.png",
+        "bgBlur": "/src/img/projects/bg1-blur.png"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Em breve",
+      "images": {
+        "bg": "/src/img/projects/bg1.png",
+        "bgBlur": "/src/img/projects/bg1-blur.png"
       }
     }
   ]
