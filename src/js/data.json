@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "name": "Space Tourism",
+      "images": {
+        "bg": "/src/img/projects/bg1.png",
+        "bgBlur": "/src/img/projects/bg1-blur.png"
+      }
+    }
+  ]
+}

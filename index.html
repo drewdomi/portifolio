@@ -11,10 +11,11 @@
     />
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="icon" type="image/svg+xml" href="src/img/favicon.svg" />
-    <script defer src="src/js/init.js"></script>
+    <script defer src="src/js/init.js" type="module"></script>
     <title>Drew Domi</title>
   </head>
   <body>
+    <div class="bg-modal modal-hide"></div>
     <header>
       <img src="src/img/logo.svg" alt="Logo Drew Domi" />
       <nav>
@@ -98,10 +99,9 @@
       </section>
       <section id="projects-section">
         <h3>Projetos</h3>
+
         <div id="proj-container">
-          <div class="proj-card" id="proj-1">
-            <span>Em breve</span>
-          </div>
+          <div class="proj-card" id="proj-1"></div>
           <div class="proj-card" id="proj-2">
             <span>Em breve</span>
           </div>

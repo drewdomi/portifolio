@@ -1,4 +1,4 @@
-@import "resources";
+@import 'resources';
 .hide {
   display: none;
 }
@@ -52,19 +52,32 @@ header {
     background: none;
     margin-top: 0;
     border-radius: none;
-    .link-item{
+    .link-item {
       padding: 0 3rem;
-      &:last-child{
+      &:last-child {
         padding-right: 0;
       }
-      a{
+      a {
         display: initial;
         padding: 0;
         width: initial;
-        &:hover{
+        &:hover {
           background-color: initial;
         }
       }
+    }
+    li::after {
+      content: '';
+      background-color: $white;
+      height: 0.2rem;
+      width: 0;
+      display: block;
+      position: relative;
+      top: 0.4rem;
+      transition: width 0.2s;
+    }
+    li:hover::after {
+      width: 100%;
     }
   }
 }
