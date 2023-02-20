@@ -12,7 +12,6 @@
 }
 
 body {
-  position: relative;
   background-color: $bg-body;
   font-family: $font-primary;
   max-width: 80rem;
@@ -191,7 +190,7 @@ section {
     }
   }
 }
-@import 'modal-proj';
+@import 'modal';
 
 @media (min-width: 800px) {
   body {
