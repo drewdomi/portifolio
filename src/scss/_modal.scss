@@ -1,4 +1,5 @@
-.bg-modal {
+.modal {
+  display: none;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -7,7 +8,27 @@
   left: 0;
   z-index: 1;
   overflow: auto;
+  transition: all 5s ease;
+  padding-top: 5%;
+  margin: auto auto;
 }
-.modal-hide {
-  display: none;
+.modal-content {
+  margin: auto;
+  width: 85%;
+  height: 95%;
+  background-color: $bg-card;
+  .modal-header {
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .close-modal-btn {
+      font-size: 4rem;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: $modal-close-btn-color;
+      }
+    }
+  }
 }
