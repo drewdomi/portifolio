@@ -18,13 +18,21 @@ export default function modal() {
     projects = data.projects
   })
 
-  function getModalContent(id) {
-    const modalTitle = modal.querySelector('.modal-title')
-    const modalImg = modal.querySelector('img')
-    const modalDesc = modal.querySelector('p')
-    const modalWebLink = modal.querySelector('a.webLink')
-    const modalGithubLink = modal.querySelector('a.githubLink')
+  const modalTitle = modal.querySelector('.modal-title')
+  const modalImg = modal.querySelector('img')
+  const modalDesc = modal.querySelector('p')
+  const modalWebLink = modal.querySelector('a.webLink')
+  const modalGithubLink = modal.querySelector('a.githubLink')
 
+  function cleanModalContent() {
+    modalTitle.innerText = ''
+    modalImg.src = ''
+    modalDesc.innerText = ''
+    modalWebLink.href = ''
+    modalGithubLink.href = ''
+  }
+
+  function getModalContent(id) {
     modalTitle.innerText = projects[id].name
     if (window.innerWidth >= 800) {
       modalImg.src = projects[id].images.bgLand
@@ -52,6 +60,7 @@ export default function modal() {
     card.addEventListener('click', () => {
       openModal()
       let cardId = getIdByRegex(card.id)
+      cleanModalContent()
       getModalContent(cardId)
     })
   })
