@@ -19,8 +19,21 @@ export default function modal() {
   })
 
   function getModalContent(id) {
-    const modalTitle = document.querySelector('.modal-title')
+    const modalTitle = modal.querySelector('.modal-title')
+    const modalImg = modal.querySelector('img')
+    const modalDesc = modal.querySelector('p')
+    const modalWebLink = modal.querySelector('a.webLink')
+    const modalGithubLink = modal.querySelector('a.githubLink')
+
     modalTitle.innerText = projects[id].name
+    if (window.innerWidth >= 800) {
+      modalImg.src = projects[id].images.bgLand
+    } else {
+      modalImg.src = projects[id].images.bgPort
+    }
+    modalDesc.innerText = projects[id].desc
+    modalWebLink.href = projects[id].links.web
+    modalGithubLink.href = projects[id].links.github
   }
 
   function openModal() {
@@ -40,7 +53,6 @@ export default function modal() {
       openModal()
       let cardId = getIdByRegex(card.id)
       getModalContent(cardId)
-      console.log(cardId)
     })
   })
 

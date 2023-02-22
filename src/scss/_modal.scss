@@ -1,4 +1,5 @@
 .modal {
+  display: grid;
   display: none;
   height: 100%;
   width: 100%;
@@ -11,23 +12,60 @@
   transition: all 5s ease;
   padding-top: 5%;
   margin: auto auto;
+  gap: 2rem;
 }
 .modal-content {
   margin: auto;
-  width: 85%;
-  height: 95%;
+  width: 90%;
+  max-width: 80rem;
   background-color: $bg-card;
-  padding: 0 1.2rem;
+  padding: 1.2rem;
   .modal-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    h3 {
+      margin: 0;
+    }
     .close-modal-btn {
       font-size: 4rem;
       cursor: pointer;
       transition: color 0.2s ease-in-out;
       &:hover {
         color: $modal-close-btn-color;
+      }
+    }
+  }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40rem;
+    .img-container {
+      margin: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 2rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  .modal-footer {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      gap: 4rem;
+    }
+    .btn {
+      cursor: pointer;
+      img {
+        width: 3.6rem;
       }
     }
   }

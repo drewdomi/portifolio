@@ -46,7 +46,7 @@ section {
 
   #animation-text {
     color: #282a2e;
-    font: 38px 'Concert One', sans-serif;
+    font: 3.8rem 'Concert One', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     cursor: default;
@@ -153,7 +153,7 @@ section {
     }
   }
   #proj-0 {
-    background-image: url($proj1-bg);
+    background-image: url($proj1-land);
   }
 }
 #contact-section {

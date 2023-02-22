@@ -13,8 +13,8 @@ $email-color: #6000c0;
 $modal-bg-color: rgba(0, 0, 0, 0.5);
 $modal-close-btn-color: tomato;
 
-$proj1-bg-blur: '/src/img/projects/bg1-blur.png';
-$proj1-bg: '/src/img/projects/bg1.png';
+$proj1-land: '/src/img/projects/proj1-land.png';
+$proj1-port: '/src/img/projects/proj1-land.png';
 
 @mixin default-box-shadow {
   box-shadow: 1px 1px 1px rgba(8, 8, 8, 0.5);

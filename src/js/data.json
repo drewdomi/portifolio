@@ -4,33 +4,52 @@
       "id": 0,
       "name": "Space Tourism",
       "images": {
-        "bg": "/src/img/projects/bg1.png",
-        "bgBlur": "/src/img/projects/bg1-blur.png"
+        "bgPort": "/src/img/projects/proj1-port.png",
+        "bgLand": "/src/img/projects/proj1-land.png"
       },
-      "about": "Uma landing page sobre uma empresa de viagem espacial, feito com HTML, SCSS, JS"
+      "desc": "Uma landing page sobre uma empresa de viagem espacial, feito com HTML, SCSS, JS",
+      "links": {
+        "web" : "https://drew-space.netlify.app/",
+        "github": "https://github.com/drewdomi/space-tourism-website/"
+      }
     },
     {
       "id": 1,
       "name": "Em breve",
       "images": {
-        "bg": "/src/img/projects/bg1.png",
-        "bgBlur": "/src/img/projects/bg1-blur.png"
+        "bgPort": "/src/img/meme.gif",
+        "bgLand": "/src/img/meme.gif"
+      },
+      "desc": "",
+      "links": {
+        "web" : "",
+        "github": ""
       }
     },
     {
       "id": 2,
       "name": "Em breve",
       "images": {
-        "bg": "/src/img/projects/bg1.png",
-        "bgBlur": "/src/img/projects/bg1-blur.png"
+        "bgPort": "/src/img/meme.gif",
+        "bgLand": "/src/img/meme.gif"
+      },
+      "desc": "",
+      "links": {
+        "web" : "",
+        "github": ""
       }
     },
     {
       "id": 3,
       "name": "Em breve",
       "images": {
-        "bg": "/src/img/projects/bg1.png",
-        "bgBlur": "/src/img/projects/bg1-blur.png"
+        "bgPort": "/src/img/meme.gif",
+        "bgLand": "/src/img/meme.gif"
+      },
+      "desc": "",
+      "links": {
+        "web" : "",
+        "github": ""
       }
     }
   ]
